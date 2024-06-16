@@ -45,6 +45,7 @@ def encode_text(text, huffman_codes):
 def decode_text(encoded_text, huffman_tree):
     decoded_text = []
     node = huffman_tree
+
     for bit in encoded_text:
         if bit == '0':
             node = node.left
